@@ -1,0 +1,74 @@
+{
+    "data":{
+        "intro": [
+            {
+                "id": "78177",
+                "title": "Cypress1 9",
+                "startsAt": "18:15",
+                "day": "Friday",
+                "room": "New",
+                "level": "Starter",
+                "speakers": [
+                    {
+                        "id": "23312312",
+                        "name": "Adh1 TTT",
+                        "__typename": "Speaker"
+                    }
+                ],
+                "__typename": "Session"
+            },
+            {
+                "id": "781773333",
+                "title": "Cypre1ss1 9",
+                "startsAt": "7:15",
+                "day": "Friday",
+                "room": "New",
+                "level": "Starter",
+                "speakers": [
+                    {
+                        "id": "23318812",
+                        "name": "Adh1 TTT",
+                        "__typename": "Speaker"
+                    }
+                ],
+                "__typename": "Session"
+            }
+        ],
+        "intermediate": [
+            {
+                "id": "7811227",
+                "title": "Cypr2es1s 9",
+                "startsAt": "9:15",
+                "day": "Friday",
+                "room": "New12",
+                "level": "Starter",
+                "speakers": [
+                    {
+                        "id": "2322312",
+                        "name": "Adh 2TTT",
+                        "__typename": "Speaker"
+                    }
+                ],
+                "__typename": "Session"
+            }
+        ],
+        "advanced": [
+            {
+                "id": "7877122217",
+                "title": "Cypr11ess 9",
+                "startsAt": "8:15",
+                "day": "Friday",
+                "room": "New3",
+                "level": "Starter",
+                "speakers": [
+                    {
+                        "id": "2312312",
+                        "name": "Adh24 TTT",
+                        "__typename": "Speaker"
+                    }
+                ],
+                "__typename": "Session"
+            }
+        ]
+    }
+}

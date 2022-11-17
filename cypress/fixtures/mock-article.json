@@ -1,0 +1,38 @@
+{
+"articles": [
+  {
+    "slug": "represent-data-110411",
+    "title": "TESTING data",
+    "description": "about fixtures about fixtures about fixtures about fixtures",
+    "body": "Fixtures are a great! Fixtures are a great! Fixtures are a great!",
+    "tagList": [],
+    "createdAt": "2022-11-01T07:34:37.253Z",
+    "updatedAt": "2022-11-01T07:34:37.253Z",
+    "favorited": false,
+    "favoritesCount": 0,
+    "author": {
+      "username": "FriedrichLedner",
+      "bio": "Books Intelligent homogeneous expedite Plastic PNG Brazilian ivory didactic hour",
+      "image": "https://www.freepnglogos.com/uploads/mr-bean/rowan-atkinson-png-download-bean-png-image-for-0.png",
+      "following": false
+    }
+  },
+  {
+    "slug": "Using-fixtures-to-represent-data2-110399",
+    "title": "Using fixtures to represent data2",
+    "description": "about fixtures",
+    "body": "Fixtures are a great way to mock data for responses to routes. Fixtures are a great way to mock data for responses to routes.",
+    "tagList": [],
+    "createdAt": "2022-11-01T09:34:37.253Z",
+    "updatedAt": "2022-11-02T12:27:13.442Z",
+    "favorited": false,
+    "favoritesCount": 0,
+    "author": {
+      "username": "FriedrichLedner",
+      "bio": "Books Intelligent homogeneous expedite Plastic PNG Brazilian ivory didactic hour",
+      "image": "https://www.freepnglogos.com/uploads/mr-bean/rowan-atkinson-png-download-bean-png-image-for-0.png",
+      "following": false
+    }
+  }],
+  "articlesCount": 2
+}
