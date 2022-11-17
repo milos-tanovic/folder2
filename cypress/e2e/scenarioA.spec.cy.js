@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import {HomePage} from "./page-objects/home-page.js"
+import {HomePage} from "../support/page-objects/home-page.js"
 
 const faker = require('faker')
 const { waitFor } = require('wd/lib/commands')
