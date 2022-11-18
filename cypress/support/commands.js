@@ -61,3 +61,18 @@ Cypress.Commands.add("editUserSettings", (imageUrl, bio) => {
     cy.get('input[placeholder="URL of profile picture"]').clear().type(imageUrl)
     cy.get('fieldset').find('textarea').clear().type(bio)
 });
+
+Cypress.Commands.add("createNewArticleAndVerify", (verifyArticleTitle) => {
+    cy.fixture('article.json').then(function (data){
+        this.data = data
+        cy.get('input[placeholder="Article Title"]').type(this.data.articleTitle)
+        verifyArticleTitle = this.data.articleTitle
+        cy.get('input[placeholder="What\'\s this article about?"]').type(this.data.articleAbout)
+        cy.get('textarea').type(this.data.articleText)
+       
+        cy.get('.btn').click()
+        cy.get('h1', {timeout: 10000}).contains(verifyArticleTitle)
+        //delete previously created article
+        cy.get('button').contains('Delete Article').click()
+    })
+});

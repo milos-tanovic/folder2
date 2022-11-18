@@ -24,22 +24,6 @@ export class HomePage{
         return cy.get('div').should('have.class','col-md-9').and('have.length.greaterThan', 10)
     }
 
-    verifyProperUserIsLoggedIn(userFirstName, userLastName){
-        return cy.get('.navbar').contains(userFirstName + userLastName)
-    }
-
-    verifySettingsPageIsLoadedAfterUpdate(userFirstName, userLastName){
-        return cy.url({timeout: 10000}).should('include', userFirstName + userLastName)
-    }
-
-    verifyProfilePictureIsShown(imageUrl){
-        return cy.get('img').invoke('attr', 'src').should('include', imageUrl)
-    }
-
-    verifyShortBioIsShown(bio){
-        return cy.get('p').contains(bio)
-    }
-
     navigateToNewArticleCreation(){
         return cy.get('.navbar').contains('New Article').click()
     }
