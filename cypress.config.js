@@ -7,6 +7,9 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config)
     },
+    //baseUrl: 'https://www.saucedemo.com/',
     baseUrl: 'https://demo.realworld.io/',
-  },
+    specPattern: "**/*.{cy.js,cy.jsx,cy.ts,cy.tsx,feature}",
+    chromeWebSecurity: false,
+  }
 })

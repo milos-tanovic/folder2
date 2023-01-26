@@ -1,17 +1,18 @@
 /// <reference types="cypress" />
-import {HomePage} from "../support/page-objects/home-page.js"
-import { SignedInPage } from "../support/page-objects/signed-in-page.js"
-import { ProfilePage } from "../support/page-objects/profile-page.js"
-import { SettingsPage } from "../support/page-objects/new-article-page.js"
+import {HomePage} from "../../support/page-objects/home-page.js"
+import { SignedInPage } from "../../support/page-objects/signed-in-page.js"
+import { ProfilePage } from "../../support/page-objects/profile-page.js"
+import { SettingsPage } from "../../support/page-objects/new-article-page.js"
 
 const faker = require('faker')
 const { waitFor } = require('wd/lib/commands')
-var userFirstName = faker.name.firstName()
-var userLastName = faker.name.lastName()
-var imageUrl = 'https://www.freepnglogos.com/uploads/mr-bean/rowan-atkinson-png-download-bean-png-image-for-0.png'
-var email = faker.internet.email()
-var password = faker.internet.password()
-const bio = faker.random.words(10)
+export var userFirstName = faker.name.firstName()
+export var userLastName = faker.name.lastName()
+export var imageUrl = 'https://www.freepnglogos.com/uploads/mr-bean/rowan-atkinson-png-download-bean-png-image-for-0.png'
+export var email = faker.internet.email()
+export var password = faker.internet.password()
+export const bio = faker.random.words(10)
+export var verifyArticleTitle = null
 const homePage = new HomePage()
 const signedInPage = new SignedInPage()
 const profilePage = new ProfilePage()
@@ -57,7 +58,6 @@ describe("scenario C", () => {
     it("should complete scenario C", () =>{
         //email = 'Alvah81@yahoo.com'
         //password = 'kEtMU8jlamBn77D'
-        var verifyArticleTitle = null
         cy.navigateToHomePage()
         cy.loginToApp(email, password)
         homePage.navigateToNewArticleCreation()
